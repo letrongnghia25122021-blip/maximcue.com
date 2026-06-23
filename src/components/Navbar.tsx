@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Menu, X, Search, Heart, Shield, HelpCircle, Activity } from 'lucide-react';
 import { Product, CartItem } from '../types';
 import { PRODUCTS } from '../data';
+import maximBilliardLogo from '../assets/images/maxim_billiard_logo_1782206540434.jpg';
 
 interface NavbarProps {
   cart: CartItem[];
@@ -90,7 +91,7 @@ export default function Navbar({
                 <img
                   alt="Maxim Billiard Logo"
                   className="h-10 w-auto object-contain brightness-100 group-hover:scale-105 transition-transform duration-300"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEPSdtb5gr_uWO98Dz1mWzWVX404OSJtR8FGZJQAi3OZ7lpmegZ6N3s1pWixQLa5ISLf_EbJwCHJVSNz-tvsAmFFdnpvpMK0johbPLWuWEsuhxgrL9gENcTzlPPwFVj8nwx1XHvc47nn8bGQbcxFUX076j8cbkPnMfrLQecLggtzp22gAn1cm5L1qGKIK2D9rey0z2yGutL6uCccS8YyiBf8jPfkpfG4qp2eI47lfqZCMyJ97705eGVk09ss1FhVJoSMyvVS8JgM8"
+                  src={maximBilliardLogo}
                 />
                 <span className="font-serif text-xl sm:text-2xl font-bold tracking-widest text-[#e5e2e1] group-hover:text-[#e9c349] transition-colors leading-none">
                   MAXIM <span className="text-xs block font-sans tracking-[0.4em] text-[#e9c349] mt-1">BILLIARD</span>

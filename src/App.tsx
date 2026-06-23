@@ -11,6 +11,9 @@ import Footer from './components/Footer';
 import { Product, CartItem, NewsArticle } from './types';
 import { PRODUCTS, NEWS_ARTICLES, TESTIMONIALS } from './data';
 
+import maximPoolPlayer from './assets/images/maxim_pool_player_1782206525004.jpg';
+import maximBilliardLogo from './assets/images/maxim_billiard_logo_1782206540434.jpg';
+
 export default function App() {
   // Shopping Cart State (Load from localStorage if available)
   const [cart, setCart] = useState<CartItem[]>(() => {
@@ -89,7 +92,7 @@ export default function App() {
       desc: 'Trải nghiệm game xé túi mù bida đầy kích thích. Cơ hội nhận siêu phẩm carbon cao cấp trị giá lên tới 57 Triệu Đồng!',
       actionText: 'THỬ VẬN MAY NGAY 🎁',
       bgType: 'image',
-      bgUrl: 'https://lh3.googleusercontent.com/aida/AP1WRLvrRIo7d5b-CHDMBXUlJjlYLQVJDM-zSx7uoZNkZg35HX-GLUD01SzelcAffiQAizlpgX8lUlnFZ2DeFWv3wnVRZXRJTG_ir1xwgnKWc-6xQmrvfe1TzXeJE2mLd0BKsJX1nkkmXw3uzx1-z0w5xK0XyHSxzP7x8bYKBCYIAlM3feQ9fFMr6LWY3waNTD3XdL5sLrXYt1hWX1YwSXwcdD-3hig3T58aFPdnfSwaVBUeoEazRhc33NXy8Aw',
+      bgUrl: maximPoolPlayer,
       onClick: () => setIsBlindBagOpen(true),
     },
     {
@@ -97,8 +100,8 @@ export default function App() {
       subtitle: 'NHÀ TÀI TRỢ KIM CƯƠNG ĐỘC QUYỀN',
       desc: 'Maxim Billiard hân hạnh đồng hành cùng giải đấu Pool quy tụ 256 cơ thủ hàng đầu thế giới với quỹ thưởng lên đến 5 Tỷ 148 Triệu VNĐ.',
       actionText: 'XEM SỰ KIỆN 🏆',
-      bgType: 'color',
-      bgUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDEPSdtb5gr_uWO98Dz1mWzWVX404OSJtR8FGZJQAi3OZ7lpmegZ6N3s1pWixQLa5ISLf_EbJwCHJVSNz-tvsAmFFdnpvpMK0johbPLWuWEsuhxgrL9gENcTzlPPwFVj8nwx1XHvc47nn8bGQbcxFUX076j8cbkPnMfrLQecLggtzp22gAn1cm5L1qGKIK2D9rey0z2yGutL6uCccS8YyiBf8jPfkpfG4qp2eI47lfqZCMyJ97705eGVk09ss1FhVJoSMyvVS8JgM8',
+      bgType: 'image',
+      bgUrl: maximBilliardLogo,
       onClick: () => {
         const doc = document.getElementById('news-section');
         if (doc) doc.scrollIntoView({ behavior: 'smooth' });
@@ -110,7 +113,7 @@ export default function App() {
       desc: 'Tự chọn ngọn Carbon bách chiến, chuôi khảm xà cừ, loại ren Uni-loc, và khắc laser tên riêng chìm dưới vân gỗ sang quý.',
       actionText: 'BẮT ĐẦU CUSTOM 🛠️',
       bgType: 'image',
-      bgUrl: 'https://lh3.googleusercontent.com/aida/AP1WRLtMLLdP6sVySmoTftX5b3fGEav6vV80RXf6cjrkykdb2sxrFS72muhqwX-D5BJWcYTtU8F1y0IpXtiJfJ6dmzlrXIDdY0zthTGcaIKFu5L22mdMhB8VVk2RJFaVYY2YLMBbm-3Zh4t3IJdyfpDuPoJ-Ad_VaSe_CROSDswIvVfGWRILaaMSd-Fm3e5FsyNGKpzaeqh6kwI4aQq3zao9UezU4qVDHm4PXS3amP5HuVw5BBngJd1VkqPslfk',
+      bgUrl: maximPoolPlayer,
       onClick: () => setIsCustomizerOpen(true),
     }
   ];
@@ -317,7 +320,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-[16/10] overflow-hidden bg-zinc-900 border border-white/10">
             <img
-              src="https://lh3.googleusercontent.com/aida/AP1WRLtMLLdP6sVySmoTftX5b3fGEav6vV80RXf6cjrkykdb2sxrFS72muhqwX-D5BJWcYTtU8F1y0IpXtiJfJ6dmzlrXIDdY0zthTGcaIKFu5L22mdMhB8VVk2RJFaVYY2YLMBbm-3Zh4t3IJdyfpDuPoJ-Ad_VaSe_CROSDswIvVfGWRILaaMSd-Fm3e5FsyNGKpzaeqh6kwI4aQq3zao9UezU4qVDHm4PXS3amP5HuVw5BBngJd1VkqPslfk"
+              src={maximPoolPlayer}
               alt="Visualizing cue customizer"
               className="w-full h-full object-cover opacity-60 hover:scale-105 transition-transform duration-700"
               referrerPolicy="no-referrer"

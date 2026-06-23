@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, ShieldAlert, Heart, Club, ShieldCheck } from 'lucide-react';
+import maximBilliardLogo from '../assets/images/maxim_billiard_logo_1782206540434.jpg';
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
               <img
                 alt="Maxim Billiard Logo"
                 className="h-9 w-auto object-contain brightness-100"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEPSdtb5gr_uWO98Dz1mWzWVX404OSJtR8FGZJQAi3OZ7lpmegZ6N3s1pWixQLa5ISLf_EbJwCHJVSNz-tvsAmFFdnpvpMK0johbPLWuWEsuhxgrL9gENcTzlPPwFVj8nwx1XHvc47nn8bGQbcxFUX076j8cbkPnMfrLQecLggtzp22gAn1cm5L1qGKIK2D9rey0z2yGutL6uCccS8YyiBf8jPfkpfG4qp2eI47lfqZCMyJ97705eGVk09ss1FhVJoSMyvVS8JgM8"
+                src={maximBilliardLogo}
               />
               <span className="font-serif text-lg font-bold tracking-widest text-white leading-none">
                 MAXIM <span className="text-[10px] block font-sans tracking-[0.3em] text-[#e9c349] mt-0.5">BILLIARD</span>
