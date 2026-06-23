@@ -4,10 +4,10 @@ import Navbar from './components/Navbar';
 import ProductCard from './components/ProductCard';
 import ProductDetailModal from './components/ProductDetailModal';
 import CartDrawer from './components/CartDrawer';
-import BlindBagModal from './components/BlindBagModal';
 import CueCustomizer from './components/CueCustomizer';
 import ConsultForm from './components/ConsultForm';
 import Footer from './components/Footer';
+import ChatWidget from './components/ChatWidget';
 import { Product, CartItem, NewsArticle } from './types';
 import { PRODUCTS, NEWS_ARTICLES, TESTIMONIALS } from './data';
 
@@ -25,7 +25,6 @@ export default function App() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isCustomizerOpen, setIsCustomizerOpen] = useState(false);
-  const [isBlindBagOpen, setIsBlindBagOpen] = useState(false);
   const [isConsultOpen, setIsConsultOpen] = useState(false);
   const [selectedNews, setSelectedNews] = useState<NewsArticle | null>(null);
 
@@ -87,16 +86,7 @@ export default function App() {
   // Carousel slider data list
   const SLIDES = [
     {
-      title: 'XÉ TÚI MÙ TRÚNG CƠ KHỦNG',
-      subtitle: 'ALLIN CUE × MYSTERY EXP',
-      desc: 'Trải nghiệm game xé túi mù bida đầy kích thích. Cơ hội nhận siêu phẩm carbon cao cấp trị giá lên tới 57 Triệu Đồng!',
-      actionText: 'THỬ VẬN MAY NGAY 🎁',
-      bgType: 'image',
-      bgUrl: maximPoolPlayer,
-      onClick: () => setIsBlindBagOpen(true),
-    },
-    {
-      title: 'ROAD TO WORLD 99 ALLINC2',
+      title: 'THE ULTIMATE BILLIARD EXPERIENCE',
       subtitle: 'NHÀ TÀI TRỢ KIM CƯƠNG ĐỘC QUYỀN',
       desc: 'Maxim Billiard hân hạnh đồng hành cùng giải đấu Pool quy tụ 256 cơ thủ hàng đầu thế giới với quỹ thưởng lên đến 5 Tỷ 148 Triệu VNĐ.',
       actionText: 'XEM SỰ KIỆN 🏆',
@@ -147,7 +137,6 @@ export default function App() {
           if (el) el.scrollIntoView({ behavior: 'smooth' });
         }}
         onOpenCustomizer={() => setIsCustomizerOpen(true)}
-        onOpenBlindBag={() => setIsBlindBagOpen(true)}
         onOpenConsultation={() => setIsConsultOpen(true)}
         onSelectProduct={(p) => setSelectedProduct(p)}
       />
@@ -487,13 +476,7 @@ export default function App() {
         </div>
       )}
 
-      {/* Blind Bag Game popup */}
-      {isBlindBagOpen && (
-        <BlindBagModal
-          onClose={() => setIsBlindBagOpen(false)}
-          onAddToCart={(product, specs) => handleAddToCart(product, specs)}
-        />
-      )}
+
 
       {/* Cue Customization Workspace popup */}
       {isCustomizerOpen && (
@@ -556,6 +539,9 @@ export default function App() {
           </div>
         </div>
       )}
+      
+      {/* Floating Chat Tool Widget */}
+      <ChatWidget />
 
     </div>
   );

@@ -2,31 +2,6 @@ import { Product, NewsArticle, CustomerFeedback } from './types';
 
 export const PRODUCTS: Product[] = [
   {
-    id: 'tui-mu-allin-cue',
-    name: 'Túi mù Allin Cue',
-    price: 1990000,
-    originalPrice: 2500000,
-    rating: 4.8,
-    salesCount: 2438,
-    image: 'https://lh3.googleusercontent.com/aida/AP1WRLsrrTKG4D0OO4-9m85ungTFxML8yj3IAMD5szcDa_aNz50vUhh637sW3wwdUO1TZb6_158HNy8iZVRShf0ZbYFpwd195Pfe31-WFu3JPHH-1mak7smIPcD1OIArLC9gpP75e7AEtNibHQHa2N9bW96fTYGKqInJhFJU2TKC_S15aM4DI3XX1oKHIRUJ8pNden99J2L0of_lxdKrlF9P6rU8KrJVwEJUt5u38WV028fPn_Dc-sFvxKvW0QA',
-    gallery: [
-      'https://lh3.googleusercontent.com/aida/AP1WRLsrrTKG4D0OO4-9m85ungTFxML8yj3IAMD5szcDa_aNz50vUhh637sW3wwdUO1TZb6_158HNy8iZVRShf0ZbYFpwd195Pfe31-WFu3JPHH-1mak7smIPcD1OIArLC9gpP75e7AEtNibHQHa2N9bW96fTYGKqInJhFJU2TKC_S15aM4DI3XX1oKHIRUJ8pNden99J2L0of_lxdKrlF9P6rU8KrJVwEJUt5u38WV028fPn_Dc-sFvxKvW0QA'
-    ],
-    category: 'blindbag',
-    label: 'NEW ARRIVAL',
-    description: 'Trải nghiệm hồi hộp cùng game xé túi mù trúng cơ bida thương hiệu Allin cực khủng. Mỗi túi chứa đựng 1 phần quà bida ngẫu nhiên với cơ hội cao sở hữu các dòng cơ Carbon, ngọn công nghệ tinh xảo, hoặc bao da bida cao cấp giá trị thực tế lên tới 57 triệu VNĐ.',
-    specs: {
-      'Tỷ lệ trúng cơ': '100% người chơi nhận quà giá trị',
-      'Quà cao nhất': 'Cơ Carbon Allin Custom 57.000.000₫',
-      'Độ an toàn': 'Cam kết đền gấp 10 lần nếu có gian lận',
-      'Độ dày hộp': 'Hộp carton cứng 5 lớp niêm phong'
-    },
-    reviews: [
-      { name: 'Phạm Thanh Sơn', rating: 5, date: '21/06/2026', comment: 'Mở được ngọn Allin Composite xịn vcl các bác ơi, quá ngon lành cho một lần khui túi mù!' },
-      { name: 'Nguyễn Văn Đạt', rating: 5, date: '18/06/2026', comment: 'Mua 2 túi nhận được 1 găng và 1 ngọn gỗ. Đóng gói rất đẹp, bất ngờ và kích thích lắm.' }
-    ]
-  },
-  {
     id: 'allin-age-carbon',
     name: 'Allin Age Carbon Premium',
     price: 7990000,

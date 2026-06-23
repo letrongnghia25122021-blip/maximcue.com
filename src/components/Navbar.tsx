@@ -9,7 +9,6 @@ interface NavbarProps {
   onOpenCart: () => void;
   onSelectCategory: (category: string) => void;
   onOpenCustomizer: () => void;
-  onOpenBlindBag: () => void;
   onOpenConsultation: () => void;
   onSelectProduct: (product: Product) => void;
 }
@@ -19,7 +18,6 @@ export default function Navbar({
   onOpenCart,
   onSelectCategory,
   onOpenCustomizer,
-  onOpenBlindBag,
   onOpenConsultation,
   onSelectProduct
 }: NavbarProps) {
@@ -129,12 +127,6 @@ export default function Navbar({
                   className="text-[#e9c349] hover:bg-[#e9c349]/10 px-3 py-1 text-xs uppercase tracking-widest font-mono font-semibold border border-[#e9c349]/30 rounded-none transition-all"
                 >
                   Tự Thiết Kế ⚙️
-                </button>
-                <button
-                  onClick={onOpenBlindBag}
-                  className="text-purple-400 hover:text-purple-300 px-2 py-1 text-xs uppercase tracking-widest font-mono font-medium transition-colors"
-                >
-                  Game Túi Mù 🎁
                 </button>
                 <button
                   onClick={onOpenConsultation}
@@ -301,15 +293,6 @@ export default function Navbar({
                 className="w-full text-center bg-[#e9c349] text-black text-xs font-mono font-bold py-3 uppercase tracking-wider"
               >
                 Tự Thiết Kế Cơ 🛠️
-              </button>
-              <button
-                onClick={() => {
-                  onOpenBlindBag();
-                  setIsOpen(false);
-                }}
-                className="w-full text-center bg-purple-700 hover:bg-purple-600 text-white text-xs font-mono py-3 uppercase tracking-wider"
-              >
-                Trải Nghiệm Xé Túi Mù 🎁
               </button>
               <button
                 onClick={() => {
