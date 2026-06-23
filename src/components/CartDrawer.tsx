@@ -204,7 +204,7 @@ export default function CartDrawer({
             )}
           </form>
 
-          {/* Pricing Summary */}
+          {/* Pricing summary */}
           <div className="border-t border-white/10 pt-4 space-y-1.5 text-xs font-mono">
             <div className="flex justify-between">
               <span className="text-zinc-500">Tạm tính:</span>
@@ -226,9 +226,16 @@ export default function CartDrawer({
             </div>
           </div>
 
+          <div className="bg-[#e9c349]/5 border border-[#e9c349]/20 p-3 text-xs text-[#e9c349] space-y-1">
+            <p className="font-bold text-[10px] uppercase tracking-wider">📞 HỖ TRỢ ĐƠN HÀNG HỎA TỐC</p>
+            <p className="text-zinc-400 font-sans text-[11px] leading-relaxed">
+              Khách mua hàng vui lòng liên hệ hotline <strong className="text-[#e9c349]">0926888788</strong> hoặc nhắn tin <strong className="text-[#e9c349]">Zalo qua số điện thoại này luôn</strong> để được báo chuẩn size, nhận quà riêng & freeship hỏa tốc!
+            </p>
+          </div>
+
           <button
             onClick={handlePlaceOrder}
-            className="w-full bg-[#e9c349] text-black font-bold font-mono text-xs py-4 uppercase tracking-widest hover:brightness-110 tracking-widest mt-2"
+            className="w-full bg-[#e9c349] text-black font-bold font-mono text-xs py-4 uppercase tracking-widest hover:brightness-110 mt-2"
           >
             XÁC NHẬN ĐẶT HÀNG & GIAO HÀNG
           </button>
@@ -370,6 +377,15 @@ export default function CartDrawer({
               <span>ĐƠN HÀNG TỔNG CỘNG:</span>
               <span>{finalTotal.toLocaleString('vi-VN')}₫</span>
             </div>
+          </div>
+
+          <div className="bg-[#e9c349]/5 border border-[#e9c349]/20 p-3.5 space-y-1 text-xs text-[#e9c349]">
+            <p className="font-bold flex items-center gap-1.5 uppercase tracking-wide text-[11px]">
+              📞 ĐẶT HÀNG QUA SĐT / ZALO
+            </p>
+            <p className="text-zinc-400 font-sans text-[11px] leading-relaxed">
+              Khách mua hàng vui lòng liên hệ trực tiếp số điện thoại <strong className="text-[#e9c349]">0926888788</strong> hoặc nhắn tin <strong className="text-[#e9c349]">Zalo số điện thoại đó luôn</strong> để chốt đặt hàng siêu tốc!
+            </p>
           </div>
 
           <button

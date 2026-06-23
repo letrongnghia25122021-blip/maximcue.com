@@ -96,7 +96,7 @@ export default function App() {
       onClick: () => setIsBlindBagOpen(true),
     },
     {
-      title: "THE ULTIMATE BILLIARD EXPERIENCE",
+      title: 'ROAD TO WORLD 99 ALLINC2',
       subtitle: 'NHÀ TÀI TRỢ KIM CƯƠNG ĐỘC QUYỀN',
       desc: 'Maxim Billiard hân hạnh đồng hành cùng giải đấu Pool quy tụ 256 cơ thủ hàng đầu thế giới với quỹ thưởng lên đến 5 Tỷ 148 Triệu VNĐ.',
       actionText: 'XEM SỰ KIỆN 🏆',

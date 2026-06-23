@@ -60,13 +60,16 @@ export default function Footer() {
               <div className="flex gap-4 pt-2 border-t border-white/5 font-mono text-[11px]">
                 <div className="flex items-center gap-1">
                   <Phone className="h-3.5 w-3.5 text-[#e9c349]" />
-                  <span>HOTLINE: 0968.1234.99</span>
+                  <span>HOTLINE: 0926.888.788</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Mail className="h-3.5 w-3.5 text-[#e9c349]" />
                   <span>SUPPORT@MAXIMBILLIARD.VN</span>
                 </div>
               </div>
+              <p className="text-[10px] text-zinc-500 font-sans mt-2 italic leading-relaxed">
+                * Khách mua hàng liên hệ số điện thoại trên hoặc Zalo số điện thoại đó luôn để được tư vấn giao hàng hỏa tốc.
+              </p>
             </div>
           </div>
         </div>

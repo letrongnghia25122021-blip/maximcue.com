@@ -210,13 +210,16 @@ export default function ProductDetailModal({
                 ✓ Đã thêm {product.name} vào giỏ hàng thành công!
               </div>
             )}
-            <div className="flex gap-4">
+            <div className="flex flex-col gap-2.5">
               <button
                 onClick={handleAddWithSpecs}
-                className="flex-1 bg-[#e9c349] text-black text-xs sm:text-sm font-bold tracking-widest uppercase font-mono py-4 hover:bg-white transition-all flex items-center justify-center gap-2"
+                className="w-full bg-[#e9c349] text-black text-xs sm:text-sm font-bold tracking-widest uppercase font-mono py-4 hover:bg-white transition-all flex items-center justify-center gap-2"
               >
                 <ShoppingCart className="h-4 w-4" /> THÊM VÀO GIỎ HÀNG
               </button>
+              <div className="text-center text-[11px] text-zinc-500 font-sans">
+                Hoặc mua hàng nhanh chóng liên hệ SĐT / Zalo: <strong className="text-[#e9c349]">0926888788</strong> luôn
+              </div>
             </div>
           </div>
         </div>
