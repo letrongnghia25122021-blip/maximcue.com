@@ -14,6 +14,10 @@ import { PRODUCTS, NEWS_ARTICLES, TESTIMONIALS } from './data';
 import maximPoolPlayer from './assets/images/maxim_pool_player_1782206525004.jpg';
 import maximBilliardLogo from './assets/images/maxim_billiard_logo_1782206540434.jpg';
 
+import deflectionReductionImg from './assets/images/deflection_reduction_1782215258628.jpg';
+import weatherResistanceImg from './assets/images/weather_resistance_1782215274318.jpg';
+import lifetimeWarrantyImg from './assets/images/lifetime_warranty_1782215292018.jpg';
+
 export default function App() {
   // Shopping Cart State (Load from localStorage if available)
   const [cart, setCart] = useState<CartItem[]>(() => {
@@ -219,30 +223,66 @@ export default function App() {
         </div>
       </section>
 
-      {/* 3. Competitive Quality Highlights Metrics Panel */}
-      <section className="bg-zinc-950 border-y border-white/5 py-12 relative">
+      {/* 3. Competitive Quality Highlights Metrics Panel with Images */}
+      <section className="bg-zinc-950 border-y border-white/5 py-16 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-            <div className="space-y-2 border-r border-transparent md:border-r-white/5 pr-4">
-              <span className="text-xs text-[#e9c349] font-mono uppercase tracking-[0.25em] block">DEFLECTION REDUCTION</span>
-              <h3 className="font-serif text-lg font-bold text-white">TRIỆT TIÊU ĐỘ BẠT THI ĐẤU</h3>
-              <p className="text-xs text-zinc-500 leading-relaxed font-sans mt-1">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            {/* DEFLECTION REDUCTION */}
+            <div className="bg-zinc-900/40 border border-white/5 p-5 hover:border-[#e9c349]/30 transition-all rounded-xl group flex flex-col justify-between">
+              <div>
+                <div className="overflow-hidden rounded-lg mb-4 aspect-[4/3] relative border border-white/5">
+                  <img 
+                    src={deflectionReductionImg} 
+                    alt="Deflection Reduction"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-60" />
+                </div>
+                <span className="text-xs text-[#e9c349] font-mono uppercase tracking-[0.25em] block mb-1">DEFLECTION REDUCTION</span>
+                <h3 className="font-serif text-lg font-bold text-white uppercase tracking-tight">TRIỆT TIÊU ĐỘ BẠT THI ĐẤU</h3>
+              </div>
+              <p className="text-[12px] text-zinc-400 leading-relaxed font-sans mt-3">
                 Ngọn Carbon và ngọn Composite Allin nén bọt lõi polyurethane giảm tối đa trọng tải đầu ngọn, đưa quỹ đạo gậy đi thẳng đét hoàn toàn không bạt bi.
               </p>
             </div>
 
-            <div className="space-y-2 border-r border-transparent md:border-r-white/5 pr-4">
-              <span className="text-xs text-[#e9c349] font-mono uppercase tracking-[0.25em] block">WEATHER RESISTANCE</span>
-              <h3 className="font-serif text-lg font-bold text-white">CHỐNG CONG VÊNH KHÍ HẬU</h3>
-              <p className="text-xs text-zinc-500 leading-relaxed font-sans mt-1">
+            {/* WEATHER RESISTANCE */}
+            <div className="bg-zinc-900/40 border border-white/5 p-5 hover:border-[#e9c349]/30 transition-all rounded-xl group flex flex-col justify-between">
+              <div>
+                <div className="overflow-hidden rounded-lg mb-4 aspect-[4/3] relative border border-white/5">
+                  <img 
+                    src={weatherResistanceImg} 
+                    alt="Weather Resistance"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-60" />
+                </div>
+                <span className="text-xs text-[#e9c349] font-mono uppercase tracking-[0.25em] block mb-1">WEATHER RESISTANCE</span>
+                <h3 className="font-serif text-lg font-bold text-white uppercase tracking-tight">CHỐNG CONG VÊNH KHÍ HẬU</h3>
+              </div>
+              <p className="text-[12px] text-zinc-400 leading-relaxed font-sans mt-3">
                 Nói lời tạm biệt việc lau dầu dọn ẩm. Vật liệu composite carbon trơ trước độ ẩm cao và sự thay đổi nóng lạnh thất thường của môi trường nhiệt đới Việt Nam.
               </p>
             </div>
 
-            <div className="space-y-2">
-              <span className="text-xs text-[#e9c349] font-mono uppercase tracking-[0.25em] block">LIFETIME WARRANTY</span>
-              <h3 className="font-serif text-lg font-bold text-white">BẢO HÀNH TOÀN DIỆN CƠ</h3>
-              <p className="text-xs text-zinc-500 leading-relaxed font-sans mt-1">
+            {/* LIFETIME WARRANTY */}
+            <div className="bg-zinc-900/40 border border-white/5 p-5 hover:border-[#e9c349]/30 transition-all rounded-xl group flex flex-col justify-between">
+              <div>
+                <div className="overflow-hidden rounded-lg mb-4 aspect-[4/3] relative border border-white/5">
+                  <img 
+                    src={lifetimeWarrantyImg} 
+                    alt="Lifetime Warranty"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-60" />
+                </div>
+                <span className="text-xs text-[#e9c349] font-mono uppercase tracking-[0.25em] block mb-1">LIFETIME WARRANTY</span>
+                <h3 className="font-serif text-lg font-bold text-white uppercase tracking-tight">BẢO HÀNH TOÀN DIỆN CƠ</h3>
+              </div>
+              <p className="text-[12px] text-zinc-400 leading-relaxed font-sans mt-3">
                 Chính sách hậu mãi 5 sao đáng kinh ngạc: Bảo hành 2 năm trục gậy không đứt, nứt, nổ. Cam kết dán đầu tẩy miễn phí 6 tháng tại tất cả chi nhánh.
               </p>
             </div>
