@@ -2,15 +2,15 @@ import { Product, NewsArticle, CustomerFeedback } from './types';
 
 export const PRODUCTS: Product[] = [
   {
-    id: 'tui-mu-allin-cue',
-    name: 'Túi mù Allin Cue',
+    id: 'tui-mu-maxim-cue',
+    name: 'Túi mù MaXim Cue',
     price: 1990000,
     originalPrice: 2500000,
     rating: 4.8,
     salesCount: 2438,
-    image: 'https://lh3.googleusercontent.com/aida/AP1WRLsrrTKG4D0OO4-9m85ungTFxML8yj3IAMD5szcDa_aNz50vUhh637sW3wwdUO1TZb6_158HNy8iZVRShf0ZbYFpwd195Pfe31-WFu3JPHH-1mak7smIPcD1OIArLC9gpP75e7AEtNibHQHa2N9bW96fTYGKqInJhFJU2TKC_S15aM4DI3XX1oKHIRUJ8pNden99J2L0of_lxdKrlF9P6rU8KrJVwEJUt5u38WV028fPn_Dc-sFvxKvW0QA',
+    image: 'bia.jpg.png',
     gallery: [
-      'https://lh3.googleusercontent.com/aida/AP1WRLsrrTKG4D0OO4-9m85ungTFxML8yj3IAMD5szcDa_aNz50vUhh637sW3wwdUO1TZb6_158HNy8iZVRShf0ZbYFpwd195Pfe31-WFu3JPHH-1mak7smIPcD1OIArLC9gpP75e7AEtNibHQHa2N9bW96fTYGKqInJhFJU2TKC_S15aM4DI3XX1oKHIRUJ8pNden99J2L0of_lxdKrlF9P6rU8KrJVwEJUt5u38WV028fPn_Dc-sFvxKvW0QA'
+      'Logo.jpg.png'
     ],
     category: 'blindbag',
     label: 'NEW ARRIVAL',
