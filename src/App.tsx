@@ -243,7 +243,7 @@ export default function App() {
                 <h3 className="font-serif text-lg font-bold text-white uppercase tracking-tight">TRIỆT TIÊU ĐỘ BẠT THI ĐẤU</h3>
               </div>
               <p className="text-[12px] text-zinc-400 leading-relaxed font-sans mt-3">
-                Ngọn Carbon và ngọn Composite Allin nén bọt lõi polyurethane giảm tối đa trọng tải đầu ngọn, đưa quỹ đạo gậy đi thẳng đét hoàn toàn không bạt bi.
+                Ngọn Carbon và ngọn Composite Maxim nén bọt lõi polyurethane giảm tối đa trọng tải đầu ngọn, đưa quỹ đạo gậy đi thẳng đét hoàn toàn không bạt bi.
               </p>
             </div>
 
