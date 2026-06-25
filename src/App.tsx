@@ -17,7 +17,6 @@ import maximBilliardLogo from './assets/images/maxim_billiard_logo_1782206540434
 import DeflectionReductionImg from './assets/images/anhbia2.jpg';
 import WeatherResistanceImg from './assets/images/anhbia3.jpg';
 import LifetimeWarrantyImg from './assets/images/anhbia4.jpg';
-
 export default function App() {
   // Shopping Cart State (Load from localStorage if available)
   const [cart, setCart] = useState<CartItem[]>(() => {
@@ -232,11 +231,10 @@ export default function App() {
               <div>
                 <div className="overflow-hidden rounded-lg mb-4 aspect-[4/3] relative border border-white/5">
                   <img 
-                    src="/anhbia4.jpg" 
-                    alt="Deflection Reduction"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
-                  />
+  src={DeflectionReductionImg} 
+  alt="Deflection Reduction"
+  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+/>
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-60" />
                 </div>
                 <span className="text-xs text-[#e9c349] font-mono uppercase tracking-[0.25em] block mb-1">DEFLECTION REDUCTION</span>
@@ -252,11 +250,10 @@ export default function App() {
               <div>
                 <div className="overflow-hidden rounded-lg mb-4 aspect-[4/3] relative border border-white/5">
                   <img 
-                    src="/anhbia2.jpg" 
-                    alt="Weather Resistance"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
-                  />
+  src={WeatherResistanceImg} 
+  alt="Weather Resistance"
+  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+/>
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-60" />
                 </div>
                 <span className="text-xs text-[#e9c349] font-mono uppercase tracking-[0.25em] block mb-1">WEATHER RESISTANCE</span>
@@ -272,11 +269,10 @@ export default function App() {
               <div>
                 <div className="overflow-hidden rounded-lg mb-4 aspect-[4/3] relative border border-white/5">
                   <img 
-                    src="/anhbia3.jpg" 
-                    alt="Lifetime Warranty"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
-                  />
+  src={LifetimeWarrantyImg} 
+  alt="Lifetime Warranty"
+  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+/>
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-60" />
                 </div>
                 <span className="text-xs text-[#e9c349] font-mono uppercase tracking-[0.25em] block mb-1">LIFETIME WARRANTY</span>
