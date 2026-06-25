@@ -95,7 +95,7 @@ export default function App() {
       desc: 'Maxim Billiard hân hạnh đồng hành cùng giải đấu Pool quy tụ 256 cơ thủ hàng đầu thế giới với quỹ thưởng lên đến 5 Tỷ 148 Triệu VNĐ.',
       actionText: 'XEM SỰ KIỆN 🏆',
       bgType: 'image',
-      bgUrl: maximBilliardLogo,
+      bgUrl: HeroBannerImg2, // Thay bằng ảnh anhbia4.jpg
       onClick: () => {
         const doc = document.getElementById('news-section');
         if (doc) doc.scrollIntoView({ behavior: 'smooth' });
@@ -107,7 +107,7 @@ export default function App() {
       desc: 'Tự chọn ngọn Carbon bách chiến, chuôi khảm xà cừ, loại ren Uni-loc, và khắc laser tên riêng chìm dưới vân gỗ sang quý.',
       actionText: 'BẮT ĐẦU CUSTOM 🛠️',
       bgType: 'image',
-      bgUrl: maximPoolPlayer,
+      bgUrl: HeroBannerImg1, // Thay bằng ảnh gioithieu.jpg
       onClick: () => setIsCustomizerOpen(true),
     }
   ];
