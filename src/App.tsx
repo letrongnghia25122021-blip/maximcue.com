@@ -14,7 +14,7 @@ import { PRODUCTS, NEWS_ARTICLES, TESTIMONIALS } from './data';
 import maximPoolPlayer from './assets/images/maxim_pool_player_1782206525004.jpg';
 import maximBilliardLogo from './assets/images/maxim_billiard_logo_1782206540434.jpg';
 import HeroBannerImg1 from './assets/images/gioithieu.jpg';
-import HeroBannerImg2 from './assets/images/anhbia4.jpg';
+import HeroBannerImg2 from './assets/images/anhbia6.jpg';
 import DeflectionReductionImg from './assets/images/gioithieu.jpg';
 import WeatherResistanceImg from './assets/images/gioithieu1.jpg';
 import LifetimeWarrantyImg from './assets/images/anhbia4.jpg';
@@ -95,7 +95,7 @@ export default function App() {
       desc: 'Maxim Billiard hân hạnh đồng hành cùng giải đấu Pool quy tụ 256 cơ thủ hàng đầu thế giới với quỹ thưởng lên đến 5 Tỷ 148 Triệu VNĐ.',
       actionText: 'XEM SỰ KIỆN 🏆',
       bgType: 'image',
-      bgUrl: HeroBannerImg2, // Thay bằng ảnh anhbia4.jpg
+      bgUrl: HeroBannerImg2, // Thay bằng ảnh anhbia6.jpg
       onClick: () => {
         const doc = document.getElementById('news-section');
         if (doc) doc.scrollIntoView({ behavior: 'smooth' });
