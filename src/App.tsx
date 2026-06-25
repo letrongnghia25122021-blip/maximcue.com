@@ -252,7 +252,7 @@ export default function App() {
               <div>
                 <div className="overflow-hidden rounded-lg mb-4 aspect-[4/3] relative border border-white/5">
                   <img 
-                    src={weatherResistanceImg} 
+                    src="/anhbia2.jpg" 
                     alt="Weather Resistance"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     referrerPolicy="no-referrer"
@@ -272,7 +272,7 @@ export default function App() {
               <div>
                 <div className="overflow-hidden rounded-lg mb-4 aspect-[4/3] relative border border-white/5">
                   <img 
-                    src={lifetimeWarrantyImg} 
+                    src="/anhbia3.jpg" 
                     alt="Lifetime Warranty"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     referrerPolicy="no-referrer"
