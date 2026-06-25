@@ -13,7 +13,8 @@ import { PRODUCTS, NEWS_ARTICLES, TESTIMONIALS } from './data';
 
 import maximPoolPlayer from './assets/images/maxim_pool_player_1782206525004.jpg';
 import maximBilliardLogo from './assets/images/maxim_billiard_logo_1782206540434.jpg';
-
+import HeroBannerImg1 from './assets/images/gioithieu.jpg';
+import HeroBannerImg2 from './assets/images/anhbia4.jpg';
 import DeflectionReductionImg from './assets/images/gioithieu.jpg';
 import WeatherResistanceImg from './assets/images/gioithieu1.jpg';
 import LifetimeWarrantyImg from './assets/images/anhbia4.jpg';
