@@ -14,8 +14,8 @@ import { PRODUCTS, NEWS_ARTICLES, TESTIMONIALS } from './data';
 import maximPoolPlayer from './assets/images/maxim_pool_player_1782206525004.jpg';
 import maximBilliardLogo from './assets/images/maxim_billiard_logo_1782206540434.jpg';
 
-import DeflectionReductionImg from './assets/images/anhbia2.jpg';
-import WeatherResistanceImg from './assets/images/anhbia3.jpg';
+import DeflectionReductionImg from './assets/images/gioithieu.jpg';
+import WeatherResistanceImg from './assets/images/gioithieu1.jpg';
 import LifetimeWarrantyImg from './assets/images/anhbia4.jpg';
 export default function App() {
   // Shopping Cart State (Load from localStorage if available)
